@@ -470,10 +470,11 @@ async def connect_profile(callback: CallbackQuery):
     builder = InlineKeyboardBuilder()
     builder.button(text='️Windows [Hiddify]', url='https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Windows-Setup-x64.exe')
     builder.button(text='Linux [Hiddify]', url='https://github.com/hiddify/hiddify-app/releases')
-    builder.button(text='iOS/macOS [Happ]', url='https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973')
+    builder.button(text='macOS [Hiddify]', url='https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-MacOS.dmg')
     builder.button(text='Android [Hiddify]', url='https://play.google.com/store/apps/details?id=app.hiddify.com')
+    builder.button(text='iOS [DefaultVPN]', url='https://apps.apple.com/ru/app/defaultvpn/id6744725017')
     builder.button(text="⬅️ Назад", callback_data="back_to_menu")
-    builder.adjust(2, 2, 1)
+    builder.adjust(3, 2, 1)
 
     await callback.message.edit_text(
         text,
