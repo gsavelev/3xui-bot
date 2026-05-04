@@ -22,6 +22,7 @@ from functions import (
 logger = logging.getLogger(__name__)
 
 router = Router()
+router.message.filter(F.chat.type == "private")
 
 MAX_MESSAGE_LENGTH = 4096
 
